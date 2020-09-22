@@ -1,0 +1,28 @@
+$babyBlue: #008795;
+
+.middle-text{
+    margin: 40px auto;
+    a , h3 , h6{
+        color: $babyBlue;
+    }
+}
+.release-section{
+    margin-bottom: 50px;
+    .posts{
+        .col-md-3{
+            margin-bottom: 20px;
+        }
+        @media (min-width: 767px) {
+            .col-md-3{
+                padding: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+.posts{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+}

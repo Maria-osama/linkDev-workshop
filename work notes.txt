@@ -1,0 +1,22 @@
+
+- My laptop doesn't support the application needed to open .xd file - so I used an online tool to open it [https://psdetch.com/]
+
+- Code passed CSS validator - you'll find w3c badge at the most bottom right of the footer.
+
+- Can't test my code with HTML validator as I'm using React that uses JSX.
+
+-At Newslisting page: 
+  
+      * first: I got all data in ComponentDidMount function and set it in a state.
+
+      * on click on Search button or Enter key , I didn't request the data from json file again [as it's aleardy saved in state from step 1]
+        So there is no time to show the loading bar. [time between send request and get response]
+     
+      * So I showed the bar manually for one second by using setTimeOut function.
+ 
+      * Can't download the white search icon, so I used blue search icon from the main Navbar and changed the button color.
+
+      * on 'Load More' button click - 4 extra posts will be shown.
+
+- All links in header and footer routes to home page( / ) except 'Press Release' it routes to NewsListing page
+ 

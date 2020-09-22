@@ -1,0 +1,164 @@
+// Mobile first resbonsive design
+
+$green: #c2f83f;
+
+.carousel {
+    margin-top: 55px;
+    &.slide {
+        
+        .fade {
+          -webkit-animation-name: fade;
+          -webkit-animation-duration: 1.5s;
+          animation-name: fade;
+          animation-duration: 1.5s;
+          &:not(.show) {
+            opacity: 1 !important;
+        }
+        }
+        
+        @-webkit-keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+        
+        @keyframes fade {
+          from {opacity: .4}
+          to {opacity: 1}
+        }
+      .carousel-item {
+          position: relative;
+          img{
+              height: 245px;
+          }
+      }
+    .carousel-control-prev-icon {
+        background-image: url('../../../src/imgs/left-arrow.png') !important;
+      }
+    .carousel-control-next-icon {
+        background-image: url('../../../src/imgs/right-arrow.png') !important;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+      display: inline-block;
+      background: no-repeat 50%/100% 100%;
+      width: 30px;
+      height: 70px;
+    }
+
+    .carousel-caption{
+        top: 19%;
+        p{
+            font-size: 13px;
+            span{
+                &.name{
+                    color: $green;
+                    font-size: 19px;
+                }
+            }
+        }
+        .scrollSection{
+            display: none;
+           
+        }
+        
+        .readMore , .donateNow {
+            font-size: 11px;
+            color: #F2F0F0;
+        }
+        .readMore{
+            background-color: transparent;
+            border: 1px solid #F2F0F0;
+            margin-right: 15px;
+        }
+        .donateNow {
+            background-color: #8DC043;
+        }
+       .scrollIcon {
+        height: auto;
+        margin-bottom: 10px;
+       }
+       h6{
+        color: #c8c8c8;
+        font-size: 14px;
+       }
+    }
+
+    
+    @media (min-width: 600px){
+        margin-top: 5%;
+        .carousel-item{
+            img{
+                height: 350px;
+            }
+            .carousel-caption{
+                top: auto;
+                p{
+                    font-size: 16px;
+                    span{
+                        &.name{
+                            font-size: 22px;
+                        }
+                    }
+                }
+                .readMore , .donateNow {
+                    font-size: initial;
+                }
+                .scrollSection{
+                    display: block;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    @media (min-width: 767px){
+        .carousel-control-next-icon, 
+        .carousel-control-prev-icon{
+            width: 70px;
+            height: 128px;
+        }
+        .carousel-caption{
+            top: 35%;
+            p{
+                font-size: 18px; 
+            }
+            .scrollIcon{
+                margin-top: 3%;
+            }
+            .readMore , .donateNow{ 
+                @media (min-width: 767px) {
+                font-size: 18px;
+                width: 97px;
+                width: 162px;
+                border-radius: 0;
+                }
+            }
+        }
+    }
+    @media (min-width: 991px){
+        margin-top: 0;
+        .carousel-item{
+            img{
+                height: 515px;
+            }
+            .carousel-caption{
+            
+                p{
+                    font-size: 30px; 
+                    span{
+                        &.name{
+                        font-size: 34px;
+                        }
+                    }
+                }
+                .scrollIcon{
+                    margin-top: 5%;
+                }
+            }
+        }
+     
+    }
+
+    
+    }
+
+   
+}

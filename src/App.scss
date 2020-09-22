@@ -1,0 +1,91 @@
+@import "./components/UI/Assets/master";
+
+.App {
+  text-align: center;
+  nav{
+    background: $basicBackground;
+    text-align: left;
+    
+    .nav-item{
+      a{
+        color: $babyBlue !important;
+      }
+      &.dropdown:hover{
+        .dropdown-menu{
+        //  display: block !important;
+        }
+      }
+    }
+    
+    .smLogo{
+      width: 50px;
+    }
+    .collapse{
+     display: none !important;
+    }
+  }
+  .first-nav{
+    display: none;
+  }
+
+  .subNav{
+    border-bottom: 3px solid #dad7d7;
+    padding: 10px 0;
+    margin-bottom: 40px;
+    a{
+     color: #A7AAA9;
+     margin-right: 5px;
+     font-size: 11px;
+    }
+    span{
+      margin-right: 5px;
+    }
+    span, & :last-child{
+        color: $babyBlue;
+        &:hover{
+          cursor: auto;
+        }
+    }
+    
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+  
+
+@media (min-width: 992px){
+  nav{
+    background: rgba($basicBackground, 0.9);
+    .searchIcon{
+      position: absolute;
+      right: 60px;
+    }
+    .collapse{
+      display: flex!important
+    }
+  }
+  .first-nav{
+    display: block;
+    background-color: #fff;
+    img{
+      width: 80px;
+    }
+  }
+  .second-nav{
+    margin-top: 71px;
+  }
+}
+
+@media (min-width: 767px) {
+  .subNav{
+    a{
+      font-size: 14px;
+    }
+  }
+}
+}

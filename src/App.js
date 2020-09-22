@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Layout from './components/Layout/Layout';
+import './App.scss';
+import './containers/homePage/HomePage.scss';
+import './components/Carousel/Carousel.scss';
+import './components/SuccessStroy/SuccessStory.scss';
+import './components/Investment/Investment.scss';
+import './containers/Post/Post.scss';
+import './containers/NewsListing/NewsListing.scss';
+import './containers/FullPost/FullPost.scss';
+import './components/UI/Spinner/Spinner.scss';
+import './components/Footer/Footer.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Layout/>   
     </div>
   );
 }

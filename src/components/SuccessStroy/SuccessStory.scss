@@ -1,0 +1,95 @@
+.successStoryCarousel{
+    .carousel-inner{
+        width: 78%;
+        margin: 0 auto;
+
+    }
+ .story-container{
+    position: relative;
+    flex: 1;
+    background-image: url('../../imgs/successStory.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top:80px;
+        .circle{
+            position: absolute;
+            left: 50%;
+            margin-left: -50px;
+            top: -78px;
+            display: block;
+            width: 99px;
+            height: 99px;
+            background: #008598;
+            border: 6px solid white;
+            border-radius: 50%;
+           -moz-border-radius: 50%;
+           -webkit-border-radius: 50%;
+            background-image: url('../../imgs/invest5.png');
+            background-size: 65%;
+            background-position:50% 50%;
+            background-repeat:no-repeat;
+}
+       .story-text{
+        color: #fff;  
+        padding: 1px 0;
+        position: relative;
+        .story-title{
+            margin: 35px auto;
+            font-size: 22px;
+            font-weight: 400;
+        }  
+        .story-year{
+            font-size: 45px;
+        }
+        .story-subtitle{
+            font-size: 19px;
+        }
+        .story-desc{
+            font-size: 15px;
+            max-width: 355px;
+            margin: 0 auto 25px;
+        }
+    }
+ }
+
+ .carousel.slide .carousel-control-prev-icon ,
+ .carousel.slide .carousel-control-next-icon
+ {
+    border-radius: 50%;
+    border: 1px solid #008795;
+    width: 27%;
+    height: 9%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10%;
+    opacity: 1;
+ }
+ .carousel.slide .carousel-control-prev-icon {
+    background-image: url('../../imgs/blueLeftArrow.png') !important;
+ }
+ .carousel.slide .carousel-control-next-icon {
+    background-image: url('../../imgs/bluerightArrow.png') !important;
+ }
+
+ @media (min-width: 767px) {
+    .story-container{
+        margin-right: 15px;
+        margin-top:100px;
+        .story-text{
+            .story-title{
+            margin: 40px auto 60px;
+            font-size: 24px;
+                
+            }
+            .story-year{
+                font-size: 55px;
+            }
+            .story-desc{
+                font-size: 18px;
+                margin: 0 auto 90px;
+            }
+        }
+    }
+ }
+}
