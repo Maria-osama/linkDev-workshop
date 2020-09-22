@@ -39,9 +39,10 @@ $green: #7cc244;
             margin-right: 5px;
         }
     }
-    a.btn-primary{
-        background-color: transparent;
-        border: none;
+     a.btn-primary , a.btn-primary:focus, a.btn-primary:active { 
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
     }
     .read-more{
         color: #fff;
